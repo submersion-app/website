@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+
+    <title>Submersion — Local-first dive logging</title>
+    <meta
+      name="description"
+      content="Submersion is a modern, open-source, cross-platform dive logging app. Local-first. No account. No lock-in."
+    />
+
+    <meta property="og:title" content="Submersion" />
+    <meta
+      property="og:description"
+      content="A modern, open-source, cross-platform dive logging app. Own your logbook."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/png" href="assets/submersion-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+
+    <header class="top">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#top">
+          <img
+            class="brand__mark"
+            src="assets/submersion-logo.png"
+            alt="Submersion"
+            width="44"
+            height="44"
+            decoding="async"
+          />
+          <span class="brand__name">Submersion</span>
+        </a>
+
+        <div class="nav__links">
+          <a href="#why">Why</a>
+          <a href="#features">Features</a>
+          <a href="#screens">Screens</a>
+          <a href="#roadmap">Roadmap</a>
+          <a class="btn btn--small" href="#get">Get it</a>
+        </div>
+      </nav>
+
+      <section class="hero" id="top">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">Local-first • Open-source • Cross-platform</p>
+            <h1>Own your dive logbook.</h1>
+            <p class="lead">
+              Submersion gives divers full ownership of their logbooks — no proprietary formats, no cloud lock‑in, no
+              subscription.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn" href="#screens">See it in action</a>
+              <a class="btn btn--ghost" href="#why">Why Submersion?</a>
+            </div>
+
+            <ul class="hero__stats" aria-label="Highlights">
+              <li>
+                <strong>Local-first</strong>
+                <span>Offline, SQLite, export anytime</span>
+              </li>
+              <li>
+                <strong>Open standards</strong>
+                <span>UDDF 3.2 + CSV</span>
+              </li>
+              <li>
+                <strong>300+ computers</strong>
+                <span>USB & Bluetooth via libdivecomputer</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="frame">
+              <img
+                class="frame__img"
+                src="screenshots/home_screen.png"
+                alt=""
+                loading="eager"
+                decoding="async"
+              />
+              <div class="frame__glow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="content">
+      <section class="section" id="why">
+        <div class="container">
+          <div class="section__head">
+            <h2>Built for divers who want control.</h2>
+            <p>
+              Most logbooks are either dated desktop apps or mobile apps that trap your data behind accounts and
+              proprietary clouds. Submersion is different.
+            </p>
+          </div>
+
+          <div class="cards" role="list">
+            <article class="card" role="listitem">
+              <h3>You control your data</h3>
+              <p>
+                Data is stored locally in SQLite. Sync is your choice. Export your full logbook to open standards at
+                any time.
+              </p>
+            </article>
+            <article class="card" role="listitem">
+              <h3>No lock‑in</h3>
+              <p>
+                UDDF 3.2 import/export + CSV. Your dive history stays portable — now and years from now.
+              </p>
+            </article>
+            <article class="card" role="listitem">
+              <h3>One app everywhere</h3>
+              <p>iOS, Android, macOS, Windows, and Linux — the same logbook and analytics on every device.</p>
+            </article>
+            <article class="card" role="listitem">
+              <h3>Free forever</h3>
+              <p>Open source (GPL‑3.0). No ads. No premium tiers for core features.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight" id="features">
+        <div class="container">
+          <div class="section__head">
+            <h2>Features that scale from rec to tech.</h2>
+            <p>Capture the basics fast — and go deep when you need to.</p>
+          </div>
+
+          <div class="featureGrid">
+            <div class="feature">
+              <h3>Dive logging</h3>
+              <ul>
+                <li>Comprehensive entry: conditions, times, temps</li>
+                <li>Trips, tags, favorites, notes</li>
+                <li>Multi-tank + gas mixes (air, nitrox, trimix)</li>
+              </ul>
+            </div>
+
+            <div class="feature">
+              <h3>Dive sites</h3>
+              <ul>
+                <li>GPS coordinates + interactive maps</li>
+                <li>Depth ranges, difficulty, hazards</li>
+                <li>Location capture + reverse geocoding</li>
+              </ul>
+            </div>
+
+            <div class="feature">
+              <h3>Computer integration</h3>
+              <ul>
+                <li>USB & Bluetooth downloads</li>
+                <li>Incremental downloads + duplicate detection</li>
+                <li>300+ supported models via libdivecomputer</li>
+              </ul>
+            </div>
+
+            <div class="feature">
+              <h3>Technical diving</h3>
+              <ul>
+                <li>Bühlmann ZH‑L16C + gradient factors</li>
+                <li>NDL/ceiling/TTS, CNS/OTU tracking</li>
+                <li>Multi-gas support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--scrolly" id="screens">
+        <div class="container">
+          <div class="section__head">
+            <h2>New details unfold as you scroll.</h2>
+            <p>
+              The UI is designed around progressive disclosure — quick at a glance, deep on demand.
+            </p>
+          </div>
+
+          <div class="scrolly" data-scrolly>
+            <div class="scrolly__sticky" aria-hidden="true">
+              <div class="device">
+                <img
+                  class="device__img"
+                  src="screenshots/home_screen.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  data-scrolly-image
+                />
+                <div class="device__shine"></div>
+              </div>
+            </div>
+
+            <div class="scrolly__steps" aria-label="Screenshots walkthrough">
+              <article class="step is-active" data-step data-img="screenshots/home_screen.png">
+                <h3>Start at the surface</h3>
+                <p>See your recent dives, stats, and entry points — without hunting through menus.</p>
+                <div class="step__more">
+                  <ul>
+                    <li>Local-first by default</li>
+                    <li>Works offline, always</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="step" data-step data-img="screenshots/dive_log.png">
+                <h3>Log dives fast</h3>
+                <p>Capture depth, time, temps, conditions, buddies, and notes.</p>
+                <div class="step__more">
+                  <ul>
+                    <li>Automatic dive numbering with gap detection</li>
+                    <li>Surface interval calculation between dives</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="step" data-step data-img="screenshots/dive_details_1.png">
+                <h3>Go deeper when needed</h3>
+                <p>Details expand to show the full story: location, conditions, gases, and more.</p>
+                <div class="step__more">
+                  <ul>
+                    <li>Multi-tank support</li>
+                    <li>Air, nitrox, trimix</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="step" data-step data-img="screenshots/trips.png">
+                <h3>Organize by trip</h3>
+                <p>Group multi-dive weekends, expeditions, and liveaboards into a clean timeline.</p>
+                <div class="step__more">
+                  <ul>
+                    <li>Trip details with structured metadata</li>
+                    <li>One place for a full adventure</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="step" data-step data-img="screenshots/dive_sites.png">
+                <h3>Build a site library</h3>
+                <p>Track sites with GPS, region/country, and rich notes.</p>
+                <div class="step__more">
+                  <ul>
+                    <li>Maps + clustering</li>
+                    <li>Capture location from device GPS</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="step" data-step data-img="screenshots/equipment.png">
+                <h3>Keep gear ready</h3>
+                <p>Track service intervals, sets (“bags”), and per-dive equipment usage.</p>
+                <div class="step__more">
+                  <ul>
+                    <li>Service reminders</li>
+                    <li>Serial numbers and purchase dates</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="step" data-step data-img="screenshots/find_device.png">
+                <h3>Connect dive computers</h3>
+                <p>Find and pair devices over USB or Bluetooth — then import dives in minutes.</p>
+                <div class="step__more">
+                  <ul>
+                    <li>Incremental downloads (new dives only)</li>
+                    <li>Duplicate detection</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="step" data-step data-img="screenshots/downloading.png">
+                <h3>Download with confidence</h3>
+                <p>Progress and status stay visible while the app pulls profiles and metadata.</p>
+                <div class="step__more">
+                  <ul>
+                    <li>300+ supported models via libdivecomputer</li>
+                    <li>Works across platforms</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="roadmap">
+        <div class="container">
+          <div class="section__head">
+            <h2>Roadmap</h2>
+            <p>Shipping steadily, with an emphasis on quality and openness.</p>
+          </div>
+
+          <div class="timeline" role="list">
+            <div class="milestone" role="listitem">
+              <div class="milestone__tag">Complete</div>
+              <h3>v1.0 → v1.1</h3>
+              <p>Core logging workflow, sites, gear, statistics, and UX improvements like GPS + maps.</p>
+            </div>
+            <div class="milestone" role="listitem">
+              <div class="milestone__tag">In progress</div>
+              <h3>v1.5</h3>
+              <p>Dive computer connectivity, deco algorithms, O₂ tracking, and deeper profile telemetry.</p>
+            </div>
+            <div class="milestone" role="listitem">
+              <div class="milestone__tag">Planned</div>
+              <h3>v2.0</h3>
+              <p>Opt‑in sync, photos, multi‑language support, and community features.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--cta" id="get">
+        <div class="container">
+          <div class="cta">
+            <div class="cta__copy">
+              <h2>Ready to dive in?</h2>
+              <p>
+                Submersion is open source and local-first. Try it, export your data any time, and help shape the
+                roadmap.
+              </p>
+            </div>
+            <div class="cta__actions">
+              <a class="btn" href="https://github.com/submersion-app/submersion" target="_blank" rel="noreferrer"
+                >View on GitHub</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/submersion-app/submersion#quick-start"
+                target="_blank"
+                rel="noreferrer"
+                >Build & run</a
+              >
+            </div>
+          </div>
+
+          <footer class="footer">
+            <p>
+              © <span data-year></span> Submersion. Open source under GPL‑3.0.
+            </p>
+          </footer>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
