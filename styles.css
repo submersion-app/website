@@ -117,6 +117,7 @@ a:hover {
 }
 
 .brand__name {
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.2px;
 }
