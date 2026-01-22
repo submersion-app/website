@@ -27,14 +27,14 @@
 
     image.classList.add('is-fading');
 
-    // Swap after fade-out; keep timing aligned with CSS.
+    // Swap after fade-out; keep timing aligned with CSS (300ms transition).
     window.setTimeout(() => {
       image.setAttribute('src', nextSrc);
 
       // Force a paint so the fade-in is smooth after the src change.
       void image.offsetHeight;
       image.classList.remove('is-fading');
-    }, 140);
+    }, 300);
   };
 
   // Preload images to reduce flicker.
@@ -45,26 +45,12 @@
     img.src = src;
   }
 
-  // Activate based on scroll position.
-  const observer = new IntersectionObserver(
-    (entries) => {
-      // Choose the entry closest to the center of the viewport.
-      const visible = entries
-        .filter((e) => e.isIntersecting)
-        .sort((a, b) => Math.abs(a.boundingClientRect.top) - Math.abs(b.boundingClientRect.top));
+  // Click-to-navigate: users click step cards to change the image.
+  for (const step of steps) {
+    step.style.cursor = 'pointer';
+    step.addEventListener('click', () => setActive(step));
+  }
 
-      const best = visible[0];
-      if (best) setActive(best.target);
-    },
-    {
-      root: null,
-      threshold: [0.25, 0.5, 0.75],
-      rootMargin: '-35% 0px -45% 0px',
-    },
-  );
-
-  for (const step of steps) observer.observe(step);
-
-  // Fallback: ensure first step active on load.
+  // Ensure first step active on load.
   setActive(steps[0]);
 })();

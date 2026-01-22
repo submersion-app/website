@@ -51,6 +51,7 @@ body {
     radial-gradient(1200px 600px at 15% -10%, rgba(120, 205, 255, 0.20), transparent 60%),
     radial-gradient(900px 520px at 90% 15%, rgba(120, 255, 220, 0.14), transparent 55%),
     linear-gradient(180deg, var(--bg), var(--bg2));
+  background-attachment: fixed;
   color: var(--text);
   line-height: 1.45;
   text-rendering: optimizeLegibility;
@@ -365,8 +366,8 @@ h1 {
 
 .scrolly {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 28px;
   align-items: start;
   margin-top: 22px;
 }
@@ -392,13 +393,13 @@ h1 {
   transform: scale(1.01);
   opacity: 1;
   transition:
-    opacity 220ms ease,
-    transform 220ms ease;
+    opacity 300ms ease-out,
+    transform 300ms ease-out;
 }
 
 .device__img.is-fading {
   opacity: 0;
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .device__shine {
@@ -424,10 +425,16 @@ h1 {
   border-radius: var(--radius);
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.03);
+  cursor: pointer;
   transition:
-    transform 180ms ease,
-    background 180ms ease,
-    border-color 180ms ease;
+    transform 300ms ease-out,
+    background 300ms ease-out,
+    border-color 300ms ease-out;
+}
+
+.step:hover:not(.is-active) {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .step h3 {
@@ -445,8 +452,8 @@ h1 {
   max-height: 0;
   opacity: 0;
   transition:
-    max-height 260ms ease,
-    opacity 220ms ease;
+    max-height 350ms ease-out,
+    opacity 300ms ease-out;
 }
 
 .step__more ul {
