@@ -481,6 +481,104 @@ h1 {
   font-size: 13px;
 }
 
+/* Download section */
+.download {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.download .section__head {
+  margin-bottom: 24px;
+}
+
+.download__primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 28px;
+  font-size: 17px;
+  border-radius: 16px;
+}
+
+.download__primary svg {
+  flex-shrink: 0;
+}
+
+.download__version {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.download__secondary {
+  margin-top: 20px;
+}
+
+.download__secondary-label {
+  color: var(--faint);
+  font-size: 13px;
+  margin: 0 0 10px;
+}
+
+.download__platforms {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.download__platform {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+
+.download__platform:hover {
+  background: var(--card2);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.download__platform svg {
+  flex-shrink: 0;
+}
+
+.download__platform--active {
+  border-color: rgba(50, 160, 170, 0.4);
+  background: rgba(50, 160, 170, 0.08);
+  color: var(--text);
+}
+
+.download__fallback {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+  color: var(--faint);
+  font-size: 13px;
+}
+
+.download__fallback a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.download__fallback a:hover {
+  color: var(--text);
+}
+
 /* Responsive */
 @media (max-width: 980px) {
   .hero__grid {
@@ -516,6 +614,14 @@ h1 {
 
   h1 {
     font-size: 32px;
+  }
+
+  .download__primary {
+    width: 100%;
+  }
+
+  .download__platforms {
+    justify-content: center;
   }
 }
 
