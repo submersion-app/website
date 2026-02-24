@@ -491,6 +491,10 @@ h1 {
   margin-bottom: 24px;
 }
 
+.download .section__head p {
+  margin-inline: auto;
+}
+
 .download__primary {
   display: inline-flex;
   align-items: center;
