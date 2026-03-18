@@ -9,7 +9,7 @@
 
   const PLATFORMS = {
     macos:   { suffix: '-macOS.dmg',    label: 'macOS',   icon: 'apple' },
-    windows: { suffix: '-Windows.zip',  label: 'Windows', icon: 'windows' },
+    windows: { suffix: '-Windows-Setup.exe',  label: 'Windows', icon: 'windows' },
     linux:   { suffix: '-Linux.tar.gz', label: 'Linux',   icon: 'linux' },
     android: { suffix: '-Android.apk',  label: 'Android', icon: 'android' },
     ios:     { label: 'iOS', icon: 'apple', storeUrl: APP_STORE_URL },
